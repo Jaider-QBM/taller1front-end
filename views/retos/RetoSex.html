@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/figuras.css">
+    <script src="https://kit.fontawesome.com/d42fb48da4.js" crossorigin="anonymous"></script>
+    <link rel="Icon" href="../../assets/img/lojoJ.png">
+    <title>Modales</title>
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <div class="logo">
+                <img src="../../assets/img/lojoJ.png" alt="LogoJ">
+            </div>
+
+            <div class="title">
+                <h2>
+                    Jaider Quimbaya
+                </h2>
+            </div>
+        </div>
+
+        <nav class="nav_container">
+            <ul class="ul__nav">
+                <li class="home ">
+                    <a href="../../index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="RetoOne.html">Reto 1</a>
+                </li>
+
+                <li>
+                    <a href="#WhatsApp">Reto 2</a>
+                </li>
+
+                <li>
+                    <a href="RetoThree.html">Reto 3</a>
+                </li>
+                <li>
+                    <a href="RetoFour.html">Reto 4</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="todo">
+            <div class="contenido">
+
+                <div class="circulo">
+                    <div class="titulo">
+                        <h1>
+                            Circulo
+                        </h1>
+                    </div>
+                    
+                    <div class="info">
+                        <p>
+                            Un círculo es una forma que consta de todos los puntos en un plano que están a una distancia dada de un punto dado, el centro.
+                        </p>
+                    </div>
+                </div>
+    
+                <button id="abrirModal">Perimetro</button>
+                <div id="ventanaModal" class="modal">
+                    <div class="contenidoModal">
+                        <div class="title">
+                            <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
+                            <h2>¿Como calcular el perimetro de un circulo?</h2>
+                        </div>
+                        <div class="conten">
+                            <p>Para calcular la longitud de una circunferencia tienes que multiplicar el diámetro de ésta por el número Pi: Perímetro de un círculo es igual a PI por el diámetro (d): Perímetro de un círculo = π x d</p>
+                            <p>Pi equivale a 3.1416</p>
+                        </div>
+    
+                        <div class="datos">
+                            <label for="dia">Ingrese el diametro del circulo</label>
+                            <input type="text" name="dia" id="dia" placeholder="Ingrese el numero">
+                            </div>
+    
+                        <div class="botones">
+                            <button id="btnCalcular" onclick="calcular(event)">Calcular</button>
+                            <button class="cerModal">Cerrar Modal</button>
+                        </div>
+                
+                    </div>
+                </div>
+    
+                <button id="abrir">Area</button>
+                <div id="ventanaModal1" class="modal1">
+                    <div class="contenidoModal">
+                        <div class="title">
+                            <span class="cerrarModal1"><i class="fa-solid fa-xmark"></i></span>
+                            <h2>¿Como calcular el area de un circulo?</h2>
+                        </div>
+                        <div class="conten">
+                            <p>El área de un círculo es pi multiplicado por el radio al cuadrado (A = π r²)</p>
+                            <p>Pi equivale a 3.1416</p>
+                        </div>
+    
+                        <div class="datos">
+                            <label for="rad">Ingrese el radio del circulo</label>
+                            <input type="text" name="rad" id="rad" placeholder="Ingrese el numero">
+    
+                            
+                        </div>
+    
+                        <div class="botones">
+                            <button id="btnCalcular1" onclick="calcular(event)">Calcular</button>
+                            <button class="cerModal1">Cerrar Modal</button>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+    
+            <div class="contenido">
+                <div class="circulo">
+                    <div class="titulo">
+                        <h1>
+                            Triangulo
+                        </h1>
+                    </div>
+                    
+                    <div class="info">
+                        <p>
+                            Un triángulo está determinado por tres segmentos de recta que se denominan lados, o por tres puntos no alineados llamados vértices.
+                        </p>
+                    </div>
+                </div>
+    
+                <button id="abrirModal2">Perimetro</button>
+
+                <div id="ventanaModal2" class="modal">
+                    <div class="contenidoModal">
+                        <div class="title">
+                            <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
+                            <h2>¿Como calcular el perimetro de un triangulo?</h2>
+                        </div>
+                        <div class="conten">
+                            <p>El perímetro de un triángulo es igual a la suma de sus tres lados.</p>
+                        </div>
+    
+                        <div class="datos">
+                            <label for="num1">Ingrese el diametro del circulo</label>
+                            <input type="number" name="num1" id="num1" placeholder="Ingrese el numero">                 
+                        </div>
+                        <div class="datos">
+                            <label for="num2">Ingrese el diametro del circulo</label>
+                            <input type="number" name="num2" id="num2" placeholder="Ingrese el numero">                 
+                        </div>
+                        <div class="datos">
+                            <label for="num3">Ingrese el diametro del circulo</label>
+                            <input type="number" name="num3" id="num3" placeholder="Ingrese el numero">                 
+                        </div>
+    
+                        <div class="botones">
+                            <button id="btnCalcular2" onclick="calcular(event)">Calcular</button>
+                            <button id="cerModal2">Cerrar Modal</button>
+                        </div>
+                
+                    </div>
+                </div>
+    
+                <button id="abrirModal3">Area</button>
+                <div id="ventanaModal3" class="modal1">
+                    <div class="contenidoModal">
+
+                        <div class="title">
+                            <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
+                            <h2>¿Como calcular el area de un triangulo?</h2>
+                        </div>
+                        <div class="conten">
+                            <p>El área de un triángulo es igual a base por altura partido por 2</p>
+                        </div>
+    
+                        <div class="datos">
+                            <label for="number1">Ingrese la altura del triangulo</label>
+                            <input type="text" name="number1" id="number1" placeholder="Ingrese el numero">
+                        </div>
+
+                        <div class="datos">
+                            <label for="number2">Ingrese la base del triangulo </label>
+                            <input type="text" name="number2" id="number2" placeholder="Ingrese el numero">
+                        </div>
+    
+                        <div class="botones">
+                            <button id="btnCalcular3" onclick="calcular(event)">Calcular</button>
+                            <button id="cerModal3">Cerrar Modal</button>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+    
+            <div class="contenido">
+    
+                <div class="circulo">
+                    <div class="titulo">
+                        <h1>
+                            Rectangulo
+                        </h1>
+                    </div>
+                    
+                    <div class="info">
+                        <p>
+                            un rectángulo es un paralelogramo cuyos cuatro lados forman ángulos rectos entre sí. 
+                        </p>
+                    </div>
+                </div>
+    
+                <button id="abrirModal4">Perimetro</button>
+                <div id="ventanaModal4" class="modal">
+                    <div class="contenidoModal">
+                        <div class="title">
+                            <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
+                            <h2>¿Como calcular el perimetro de un Rectangulo?</h2>
+                        </div>
+                        <div class="conten">
+                            <p>El perímetro del rectángulo es igual a la suma de las longitudes de sus cuatro lados.</p>
+                        </div>
+    
+                        <div class="datos">
+                            <label for="numero1">Ingrese la base del rectangulo</label>
+                            <input type="text" name="numero1" id="numero1" placeholder="Ingrese el numero">
+                        </div>
+                        <div class="datos">
+                            <label for="numero2">Ingrese la alturo del rectangulo</label>
+                            <input type="text" name="numero2" id="numero2" placeholder="Ingrese el numero">
+                        </div>
+                        
+                        <div class="botones">
+                            <button id="btnCalcular4" onclick="calcular(event)">Calcular</button>
+                            <button id="cerModal4">Cerrar Modal</button>
+                        </div>
+                
+                    </div>
+                </div>
+    
+                <button id="abrirModal5">Area</button>
+                <div id="ventanaModal5" class="modal1">
+                    <div class="contenidoModal">
+                        <div class="title">
+                            <span class="cerrarModal5"><i class="fa-solid fa-xmark"></i></span>
+                            <h2>¿Como calcular el area de un rectangulo?</h2>
+                        </div>
+                        <div class="conten">
+                            <p>Fórmula del área de un rectángulo. Para calcular el área de un rectángulo multiplicamos el largo por el ancho.</p>
+                        </div>
+    
+                        <div class="datos">
+                            <label for="number3">Ingrese la altura del triangulo</label>
+                            <input type="text" name="number3" id="number3" placeholder="Ingrese el numero">
+                        </div>
+
+                        <div class="datos">
+                            <label for="number4">Ingrese la base del triangulo </label>
+                            <input type="text" name="number4" id="number4" placeholder="Ingrese el numero">
+                        </div>
+    
+                        <div class="botones">
+                            <button id="btnCalcular5" onclick="calcular(event)">Calcular</button>
+                            <button id="cerModal5">Cerrar Modal</button>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenido">
+
+                <div class="circulo">
+                    <div class="titulo">
+                        <h1>
+                            Cuadrado
+                        </h1>
+                    </div>
+                    
+                    <div class="info">
+                        <p>
+                            Un cuadrado en geometría es un cuadrilátero regular, es decir, una figura plana de cuatro lados congruentes y paralelos dos a dos, y cuatro ángulos interiores rectos
+                        </p>
+                    </div>
+                </div>
+        
+                <button id="abrirModal6">Perimetro</button>
+                <div id="ventanaModal6" class="modal">
+                    <div class="contenidoModal">
+                        <div class="title">
+                            <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
+                            <h2>¿Como calcular el perimetro de un Cuadrado?</h2>
+                        </div>
+                        <div class="conten">
+                            <p>Puedes calcular el perímetro de este cuadrado sumando la longitud de cada uno de sus cuatro lados.</p>
+                        </div>
+        
+                        <div class="datos">
+                            <label for="number">Ingrese la longitud que mide los lados lados</label>
+                            <input type="text" name=" number" id="number" placeholder="Ingrese el numero">                           
+                        </div>
+        
+                        <div class="botones">
+                            <button id="btnCalcular6" onclick="calcular(event)">Calcular</button>
+                            <button id="cerModal6">Cerrar Modal</button>
+                        </div>
+                
+                    </div>
+                </div>
+        
+                <button id="abrirModal7">Area</button>
+                <div id="ventanaModal7" class="modal1">
+                    <div class="contenidoModal1">
+                        <div class="title">
+                            <span class="cerrarModal7"><i class="fa-solid fa-xmark"></i></span>
+                            <h2>¿Como calcular el area de un cuadrado?</h2>
+                        </div>
+                        <div class="conten">
+                            <p>El área del cuadrado es igual a lado por lado.
+                            </p>
+                        </div>
+        
+                        <div class="datos">
+                            <label for="number6">Ingrese la longitud que mide los lados lados</label>
+                            <input type="text" name=" number6" id="number6" placeholder="Ingrese el numero">                           
+                        </div>
+        
+                        <div class="botones">
+                            <button id="btnCalcular7" onclick="calcular(event)">Calcular</button>
+                            <button id="cerModal7">Cerrar Modal</button>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+    </main>
+
+    
+
+    <footer class="text-center well">
+        <div class="text-1">
+            <div class="comu">
+                <p>
+                    Contenido
+                </p>
+            </div>
+            
+            <div class="linea"></div>
+
+            <ul>
+                <li>
+                    <a href="RetoOne.html">Reto 1</a>
+                </li>
+
+                <li>
+                    <a href="RetoTwo.html">Reto 2</a>
+                </li>
+
+                <li>
+                    <a href="RetoThree.html">Reto 3</a>
+                </li>
+                <li>
+                    <a href="RetoFour.html">Reto 4</a>
+                </li>
+                <li>
+                    <a href="RetoFive.html">Reto 5</a>
+                </li>
+                <li>
+                    <a href="RetoSex.html">Reto 6</a>
+                </li>
+                <li>
+                    <a href="Retosiete.html">Reto 7</a>
+                </li>
+            </ul>
+                
+                
+        </div>
+
+        <div class="text-1">
+            <div class="comu">
+                <p>Ejercicios en clase</p>
+            </div>
+            
+            <div class="linea"></div>
+
+            <ul>
+                <li>
+                    <a href="../Ejercicio1.html">Ejercicio</a>
+                </li>
+
+                <li>
+                    <a href="../Calculadora.html">Calculadora</a>
+                </li>
+                <li>
+                    <a href="../modales.html">Modales</a>
+                </li>
+
+                <li>
+                    <a href="../ejercicioForm.html">ejercicio de formnulario</a>
+                </li>
+            </ul>
+                
+                
+        </div>
+            
+        <div class="text-2">
+            <div class="logo-title">
+                <div class="nombre">
+                    <a href="">
+                        <h1>Jaider Quimbaya</h1>
+                    </a>
+                </div>      
+                <div class="imagen">
+                    <a href="#">
+                        <img src="../../assets/img/lojoJ.png" alt="imagen-empre">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="Text/JavaScript" src="../../assets/js/figuras.js" ></script>
+</body>
+</html>

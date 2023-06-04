@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+header{
+    background: black;
+    display: flex;
+}
+.logo-title{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.logo-title .logo img{
+    width: 40px;
+    border-radius: 25px;
+    margin-right: 25px;
+}
+
+.nav_container{
+    display: flex;
+    align-items: center;
+    margin-left: 250px;
+}
+
+.ul__nav{
+    display: flex;    
+    gap: 50px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+
+.ul__nav a{
+    position: relative;
+    color: rgba(205, 207, 205, 0.5);
+    padding: 0.5em 0.8rem;
+    text-decoration: none;
+}
+
+.ul__nav a::before,
+.ul__nav a::after{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    content: '';
+    opacity: 0; 
+}
+
+.ul__nav a::before{
+    right: 0;
+    top: 0;
+    border-right: 3px solid #ffe600;
+    border-top: 3px solid #ffe600;
+}
+
+.ul__nav a::after{
+    left: 0;
+    bottom: 0;
+    border-left: 3px solid #ffe600 ;
+    border-bottom: 3px solid #ffe600;
+    
+}
+
+.ul__nav a:hover, a .ul__nav .home a{
+    color: #ffff;
+}
+
+.ul__nav a:hover:before,
+.ul__nav .home a:before,
+.ul__nav a:hover:after,
+.ul__nav .home a:after{
+    opacity: 1;
+}
+
+main{
+    background: #636363;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a2ab58, #636363);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a2ab58, #636363); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 600px;
+    display: flex;
+}
+
+
+.modal{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: auto;
+    padding-top: 45px;
+    display: none;
+}
+
+.contenidoModal{
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    padding: 1rem;
+    animation-name: animarmodal;
+    animation-duration: 0.5s;
+}
+
+.contenidoModal img{
+    margin-top: 3rem;
+    width: 30px;
+    height: 30px;
+}
+
+@keyframes animarmodal{
+    from {top: -300px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+
+.cerrarModal{
+    font-size: 2rem;
+    float: right;
+}
+
+.cerrarModal:hover{
+    cursor: pointer;
+}
+
+.contenidoModal{
+    display: flex;
+    height: 580px;
+}
+
+.contenidoModal h2{
+    background-color: blueviolet;
+    color: aliceblue;
+    padding: 1rem 0;
+    text-align: center;
+    clear: both;
+    margin-top: 3rem;
+    width: 97%;
+    height: 30px;
+}
+
+.contenidoModal p{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 8rem;
+    padding: 100px 100px;
+    width: 500px;
+    height: 200px;
+}
+
+
+footer{
+    height: auto;
+    padding: 10px;
+    clear: both;
+    background: rgb(37, 37, 37);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.text-1{
+    width: 30%;
+    margin: 20px;
+    height: auto;
+}
+
+.text-1 .comu{
+    font-size: 18px;
+}
+.text-1 .bog{
+    margin-top: 10px;
+}
+
+.text-1 .linea {
+    height: 2px;
+    width: auto;
+    background: rgb(94, 93, 93);
+    margin-top: 15px;
+
+}
+.text-1 ul {
+    margin-top: 10px;
+    list-style: none;
+}
+
+.text-1 ul li{
+    margin-top: 5px;
+}
+
+.text-1 ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.text-1 ul li a:hover{
+    color: #a3a3a3;
+}
+.text-2 {
+    margin: 20px;
+}
+.text-2 .imagen a img {
+    width: 60px;
+    border-radius: 100px;
+    margin-left: 15px;
+}
+
+.text-2 .logo-title {
+    display: flex;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.text-2 .logo-title .nombre a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.feedback{
+    max-width: 100%;
+    width: 100%;
+    background-color: #ffe600;
+    padding: 5px;
+    color: #000000;
+    font-size: 15px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.success{
+    border: 2px solid lime;
+}
+
+.error{
+    border:  2px solid red; 
+}
